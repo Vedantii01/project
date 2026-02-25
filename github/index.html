@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GitHub · Let’s build from here</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" href="github.svg"/>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0d1117;
+    color:#c9d1d9;
+}
+
+/* NAVBAR */
+.navbar{
+    height:64px;
+    background:#010409;
+    display:flex;
+    align-items:center;
+    padding:0 32px;
+    border-bottom:1px solid #30363d;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    margin-right:30px;
+}
+
+.nav-links{
+    display:flex;
+    gap:22px;
+}
+
+.nav-links a{
+    color:#c9d1d9;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.dropdown{ position:relative; }
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    top:36px;
+    background:white;
+    color:#24292f;
+    padding:20px;
+    border-radius:10px;
+    min-width:250px;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+.dropdown-content a{
+    display:block;
+    margin-bottom:10px;
+    text-decoration:none;
+    color:#24292f;
+}
+
+.nav-actions{
+    margin-left:auto;
+}
+
+.signup{
+    background:#238636;
+    padding:7px 14px;
+    border-radius:6px;
+    color:white !important;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    max-width:1100px;
+    margin:100px auto;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:56px;
+    color:white;
+}
+
+.hero p{
+    font-size:20px;
+    margin:25px 0 40px;
+    color:#8b949e;
+}
+
+.hero input{
+    padding:14px;
+    width:320px;
+    border-radius:6px;
+    border:none;
+}
+
+.hero button{
+    padding:14px 22px;
+    border:none;
+    border-radius:6px;
+    background:#238636;
+    color:white;
+    margin-left:10px;
+}
+
+/* INFO SECTIONS */
+.section{
+    max-width:1200px;
+    margin:90px auto;
+    display:flex;
+    align-items:center;
+    gap:60px;
+    padding:0 40px;
+}
+
+.section img{
+    width:480px;
+    border-radius:16px;
+}
+
+.section h2{
+    color:white;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.section p{
+    font-size:18px;
+    color:#8b949e;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <div class="logo"><i class="fa-brands fa-github"></i> GitHub</div>
+
+    <div class="nav-links">
+        <div class="dropdown">
+            <a href="#">Platform ▾</a>
+            <div class="dropdown-content">
+                <a href="#">Copilot</a>
+                <a href="#">Actions</a>
+                <a href="#">Codespaces</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Solutions ▾</a>
+            <div class="dropdown-content">
+                <a href="#">Teams</a>
+                <a href="#">Enterprise</a>
+            </div>
+        </div>
+
+        <a href="#">Open Source</a>
+        <a href="pricing.html">Pricing</a>
+    </div>
+
+    <div class="nav-actions">
+        <a href="signin.html">Sign in</a>
+        <a href="signup.html" class="signup">Sign up</a>
+    </div>
+</div>
+
+<div class="hero">
+    <h1>Let’s build from here</h1>
+    <p>The world’s leading platform for developers.</p>
+    <input type="email" placeholder="Enter your email">
+    <button>Sign up for GitHub</button>
+</div>
+
+<div class="section">
+    <div>
+        <h2>AI-powered development</h2>
+        <p>Write better code faster using GitHub Copilot.</p>
+    </div>
+    <img src="https://github.githubassets.com/images/modules/site/home-campaign/illu-copilot-editor.png">
+</div>
+
+<div class="section">
+    <img src="https://github.githubassets.com/images/modules/site/home-campaign/illu-actions.png">
+    <div>
+        <h2>Automate everything</h2>
+        <p>CI/CD workflows using GitHub Actions.</p>
+    </div>
+</div>
+
+</body>
+</html>
+
